@@ -1,0 +1,10 @@
+html, 
+body, 
+body * {
+  background: #0C0D13;
+  color: #DDD;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
