@@ -3,7 +3,7 @@
 </script>
 
 <div class="extension-header">
-  <div class="title-icon-container"></div>
+  <img src='icons/icon32.png' class="title-icon-container" alt="app icon"/>
   <p class="extension-title extension-title-light-mode">{title}</p>
 </div>
 
@@ -20,13 +20,14 @@
   }
 
   .title-icon-container {
-    display: none;
+    display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: auto;
     flex-shrink: 0;
+    margin-right: 5px;
   }
 
   .extension-title {

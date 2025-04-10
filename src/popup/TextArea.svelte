@@ -48,6 +48,7 @@
 
   .input-container-light-mode {
     border: 1px solid #c0c6d2;
+    border-radius: 3px;
   }
 
   .input {
@@ -57,6 +58,7 @@
     height: 100%;
     border: none;
     background: none;
+    font-size: 10px;
   }
 
   .input-light-mode {
@@ -67,7 +69,7 @@
     font: 'Roboto';
     font-size: 12px;
   }
-
+  
   .clear-button {
     position: absolute;
     top: 5px;
