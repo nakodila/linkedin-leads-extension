@@ -9,10 +9,10 @@
   }
 </script>
 
-<div class="translate-container translate-container-light-mode">
+<div class="input-container input-container-light-mode">
   <textarea
     {id}
-    class="translate translate-light-mode"
+    class="input input-light-mode"
     {placeholder}
     {value}
     on:input={onInput}
@@ -38,18 +38,19 @@
     box-shadow: none;
   }
 
-  .translate-container {
+  .input-container {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 136px;
+    height: 40px;
+    margin-bottom: 15px;
   }
 
-  .translate-container-light-mode {
+  .input-container-light-mode {
     border: 1px solid #c0c6d2;
   }
 
-  .translate {
+  .input {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
@@ -58,11 +59,11 @@
     background: none;
   }
 
-  .translate-light-mode {
+  .input-light-mode {
     color: #000;
   }
 
-  .translate::placeholder {
+  .input::placeholder {
     font: 'Roboto';
     font-size: 12px;
   }

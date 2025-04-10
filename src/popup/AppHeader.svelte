@@ -15,10 +15,12 @@
     align-items: center;
     width: 100%;
     height: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .title-icon-container {
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
@@ -32,6 +34,6 @@
   }
 
   .extension-title-light-mode {
-    color: #000;
+    color: #4A2E1E;
   }
 </style>
