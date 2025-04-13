@@ -18,6 +18,7 @@ export default defineConfig({
           return '[name].[ext]'; // Fallback for other assets
         },
       },
+      external: ['dotenv', '@notionhq/client', 'apify-client'], // Specify external dependencies
     },
   },
   plugins: [

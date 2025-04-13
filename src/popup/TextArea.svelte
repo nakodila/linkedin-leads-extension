@@ -10,22 +10,13 @@
 </script>
 
 <div class="input-container input-container-light-mode">
-  <textarea
-    {id}
-    class="input input-light-mode"
-    {placeholder}
-    {value}
-    on:input={onInput}
-  ></textarea>
-    <button
-      class="clear-button clear-button-light-mode"
-      on:click={clearText}
-    >
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.5 4L4 12.5" />
-        <path d="M12.5 12.5L4 4" />
-      </svg>
-    </button>
+  <textarea {id} class="input input-light-mode" {placeholder} {value} on:input|preventDefault={onInput}></textarea>
+  <button class="clear-button clear-button-light-mode" on:click={clearText}>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.5 4L4 12.5" />
+      <path d="M12.5 12.5L4 4" />
+    </svg>
+  </button>
 </div>
 
 <style>
@@ -69,7 +60,7 @@
     font: 'Roboto';
     font-size: 12px;
   }
-  
+
   .clear-button {
     position: absolute;
     top: 5px;

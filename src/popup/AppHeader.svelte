@@ -3,7 +3,7 @@
 </script>
 
 <div class="extension-header">
-  <img src='icons/icon32.png' class="title-icon-container" alt="app icon"/>
+  <img src="icons/icon32.png" class="title-icon-container" alt="app icon" />
   <p class="extension-title extension-title-light-mode">{title}</p>
 </div>
 
@@ -35,6 +35,6 @@
   }
 
   .extension-title-light-mode {
-    color: #4A2E1E;
+    color: #4a2e1e;
   }
 </style>

@@ -1,5 +1,5 @@
 {
-  "name": "leet-speak-vite",
+  "name": "linkedin-leads-extension",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,6 +11,9 @@
     "preview": "vite preview"
   },
   "prettier": "@checkdigit/prettier-config",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  },
   "devDependencies": {
     "@checkdigit/prettier-config": "^6.3.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
