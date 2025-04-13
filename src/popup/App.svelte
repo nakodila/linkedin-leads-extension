@@ -11,24 +11,18 @@
   }
 
   async function addToPotentialLeadsList() {
-    console.log('addToPotentialLeadsList Account URL:', accountUrl);
     const data = await supabase.functions.invoke('super-task/profile', {
       body: { accountUrl: accountUrl },
       headers: {
-        Authorization:
-          'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzZHZnYWtkZGt6b2RvbmhzbmVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzMTQzMDIsImV4cCI6MjA1OTg5MDMwMn0.upNqNQPEAun1mlhZnRQ14L74Xh_oBgegVZjmVP0hC9Y',
+        Authorization: BEARER_TOKEN,
       },
     });
-    console.log('Data from function:', data);
   }
 
   async function getProfileDetails() {
-    console.log('getProfileDetails Account URL:', accountUrl);
-
     const data = await supabase.functions.invoke('super-task/profile', {
       body: { accountUrl: accountUrl },
     });
-    console.log('Data from function:', data);
   }
 </script>
 
